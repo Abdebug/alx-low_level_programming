@@ -1,14 +1,15 @@
 #include "main.h"
-
 /**
-  * print_diagonal - Draws a diagonal lines according parameter
-  * @n: The number of times to print diagonal lines
-  *
-  * Return: empty
-  */
+ *print_diagonal-prints a diagnal line on the console.
+ *@n:length of diagonal.
+ *
+ *Return:void.
+ */
+
 void print_diagonal(int n)
 {
-	int x, y;
+
+	int  m, p;
 
 	if (n <= 0)
 	{
@@ -16,14 +17,13 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (x = 0; x < n; x++)
+		for (m = 0; m < n; m++)
 		{
-			for (y = 0; y < x; y++)
+			for (p = 0; p < m; p++)
 			{
-				_putchar(32);
+			_putchar(' ');
 			}
-
-			_putchar(92);
+			_putchar('\\');
 			_putchar('\n');
 		}
 	}
