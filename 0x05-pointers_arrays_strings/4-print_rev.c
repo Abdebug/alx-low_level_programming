@@ -28,4 +28,3 @@ for (count = 0; s[count] != '\0'; count++)
 inc++;
 
 return (inc);
-:c
